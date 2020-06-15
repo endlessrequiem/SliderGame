@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SliderApp</string>
+    <string name="gamestart">Game started!</string>
+    <string name="numbergoeshere">Number will display here (Debug)</string>
+    <string name="guessthenumber">Get as close as you can to this number: </string>
+    <string name="newgame">New Game</string>
+    <string name="youwin">You win!</string>
+    <string name="youlose">You Lose!</string>
+    <string name="numberwas">Your Number was: </string>
+</resources>

@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
         String randnumstring = String.valueOf(randnumber);
         numguess.setText(getString(R.string.guessthenumber) + " " + randnumstring); //this is the number we have to match with
 
+        final int maxfive = randnumber + 5;
+        final int minfive = randnumber - 5;
+
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -56,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
                 seekBar.setEnabled(false);
                 if (seekBar.getProgress() == randnumber) {
                     result.setText(getString(R.string.youwin));
+                } else if (seekBar.getProgress() >= minfive && seekBar.getProgress() <= maxfive){
+                    result.setText(getString(R.string.withinfive) + " " + getString(R.string.numberwas) + " " + seekBar.getProgress());
                 } else {
                     result.setText(getString(R.string.youlose) + " " + getString(R.string.numberwas) + " " + seekBar.getProgress());
                 }

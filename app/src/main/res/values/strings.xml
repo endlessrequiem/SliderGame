@@ -7,4 +7,5 @@
     <string name="youwin">You win!</string>
     <string name="youlose">You Lose!</string>
     <string name="numberwas">Your Number was: </string>
+    <string name="withinfive">So close! You were within 5!</string>
 </resources>
